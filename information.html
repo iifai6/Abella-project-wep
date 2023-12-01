@@ -1,0 +1,109 @@
+<html><head>
+    <link rel="stylesheet" href="basic.css">
+   
+    <style>
+   table{width:90%;height: 65%;font-family: montserrat;}
+
+table, th, td {  border: 1px solid #d1bbbb; border-radius: 40px;padding: 25; }
+
+th,td{background-color: rgba(73, 61, 44, 0.708);backdrop-filter: blur(5px);}
+
+td{font-size: 28px;color:rgba(255, 255, 255, 0.801)}
+
+th{color: rgb(73, 118, 73);font-size: 40px;}
+
+th:hover{background-color: rgb(73, 61, 44);}
+
+td:hover{background-color: rgb(73, 61, 44);}
+
+caption{color:rgba(255, 255, 255, 0.728); ;font-size: 40;}
+
+#listcode{display:flex;text-align: center;}
+
+@media (max-width:1023px){
+
+  #listcode{display: block;}
+
+  #listcode li{padding: 30px;text-align: left}
+
+
+
+
+}
+
+
+
+
+
+
+    </style>
+
+    </head>
+    
+    <body >
+    <div class="nav">
+    
+            <ul>
+                <li><a href="basic.html"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8v10a1 1 0 0 0 1 1h4v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h4a1 1 0 0 0 1-1V8M1 10l9-9 9 9"></path>
+                  </svg></a></li>
+                
+                <li><a href="TheWriters.html">THE WRITERS</a></li>
+                <li><a href="review.html">REVIEWS</a></li>
+                <li><a href="Shop.html">THE SHOP</a></li>
+                <li><a href="form.html">CONTACT US</a></li>
+                <li><a href="information.html">MEMBERS INFORMATION</a></li>
+            </ul>
+            
+
+        </div>
+        <br>
+        <br> <br>
+       
+       
+       
+        <center>
+        <table  >
+          <caption>Group Members Information</caption>
+            <tr>
+              <th colspan="4" >Name[id]</th> 
+            </tr>
+
+          <tr>
+             
+              <td rowspan="3">
+                
+                <ul id="listcode">
+                <li>Shahad Ibrahim Alsukayni[431008153]</li>
+               
+                <li>Fai Ali Alenezi[431003056]</li>
+                
+                <li>Jawaher Ammar Alhoqbani[431010105]</li>
+                
+               </ul></td>
+             
+            </tr>
+           
+            
+            <caption style="caption-side: bottom;font-size: 16px;color: rgb(115, 186, 115)">Web Technology[Section:451]</caption>
+          </table>
+        </center>
+
+        <script>
+          window.onload = function() {
+              shuffleList();
+          };
+          
+          function shuffleList() {
+              var ul = document.getElementById('listcode');
+              for (var i = ul.children.length; i >= 0; i--) {
+                  ul.appendChild(ul.children[Math.random() * i | 0]);
+              }
+          }
+          </script>
+
+
+
+        
+    </body>
+</html>
